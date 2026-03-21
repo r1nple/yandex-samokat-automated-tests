@@ -18,7 +18,7 @@ public class RentInfoOrderPage {
     private By buttonOrder = By.xpath("//div[@class='Order_Buttons__1xGrp']//button[contains(text(), 'Заказать')]"); //Локатор кнопки "Заказать"
     private By buttonConfirm = By.xpath("//button[contains(text(),'Да')]"); //Локатор кнопки "Да" в модальном окне
     private By buttonRefuse = By.xpath("//button[contains(text(),'Нет')]"); //Локатор кнопки "Нет" в модальном окне
-    private By windowСonfirmationNewOrder = By.xpath("//div[@class='Order_ModalHeader__3FDaJ']"); //Локатор блока с текстом "Заказ оформлен"
+    private By windowСonfirmationNewOrder = By.xpath("//button[contains(text(),'Посмотреть статус')]"); //Локатор блока с текстом "Заказ оформлен"
 
     //Конструктор
     public RentInfoOrderPage(WebDriver driver) {

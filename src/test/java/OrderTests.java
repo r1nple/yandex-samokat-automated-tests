@@ -9,16 +9,8 @@ public class OrderTests extends BaseUiTest {
     public void upOrderTest() {
         startPage.acceptCookie();
         startPage.clickUpOrderButton();
-        userInfoOrderPage.enterFieldName("Ринат");
-        userInfoOrderPage.enterFieldSurname("Ибрагимов");
-        userInfoOrderPage.enterFieldAddress("Улица тестирования, 1");
-        userInfoOrderPage.enterFieldMetroStation("Чистые пруды");
-        userInfoOrderPage.enterFieldPhoneNumber("+79999999999");
-        userInfoOrderPage.clickButtonNext();
-        rentInfoOrderPage.fillDeliveryTime("28.03.2026");
-        rentInfoOrderPage.fillFieldRentTime();
-        rentInfoOrderPage.choseBlackBoxScooter();
-        rentInfoOrderPage.fillCommentCourier("И в ту же минуту по улицам курьеры, курьеры, курьеры... можете представить себе, тридцать пять тысяч одних курьеров! Каково положение, я спрашиваю?");
+        userInfoOrderPage.fillData("Ринат", "Ибрагимов", "Улица тестирования, 1", "Чистые пруды", "+79999999999");
+        rentInfoOrderPage.fillDataRentBlackBox("28.03.2026", "Жду, не дождусь!");
         rentInfoOrderPage.clickButtonOrder();
         rentInfoOrderPage.clickButtonConfirm();
         rentInfoOrderPage.isWindowCheckStatusDisplayed();

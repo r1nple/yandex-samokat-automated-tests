@@ -14,7 +14,7 @@ public class QuestionsTest extends BaseUiTest{
         this.expectedAnswers = expectedAnswers;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}, {1}")
     public static Object[][] expectedAnswers() {
         return new Object[][] {
                 {0, "Сутки — 400 рублей. Оплата курьеру — наличными или картой."},

@@ -49,17 +49,6 @@ public class BaseUiTest {
             startBrowserFirefox();
         }
     }
-//    public void startBrowser () {
-//        driver = new ChromeDriver();
-//        WebDriverManager.chromedriver().setup();
-//        driver.manage().window().maximize();
-//        startPage = new StartPage(driver);
-//        driver.get("https://qa-scooter.praktikum-services.ru/");
-//        errorStatusOrderPage = new ErrorStatusOrderPage(driver);
-//        userInfoOrderPage = new UserInfoOrderPage(driver);
-//        rentInfoOrderPage = new RentInfoOrderPage(driver);
-//
-//    }
 
     //Закрытие браузера
     @After
