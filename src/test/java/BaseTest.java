@@ -28,7 +28,7 @@ public class BaseTest {
             Response loginResponse = courierClient.loginCourier(loginRequest);
             Integer courierId = loginResponse.body().path("id");
             if (courierId != null) {
-                courierClient.deleteCourier(courierId);
+                deleteCourier(courierId);
             }
         }
     }

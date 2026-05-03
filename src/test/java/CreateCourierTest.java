@@ -18,21 +18,6 @@ public class CreateCourierTest extends BaseTest {
     private final CourierClient courierClient = new CourierClient();
     private Courier createdCourier;
 
-    @After
-    public void tearDown() {
-        if (createdCourier != null) {
-            CourierLoginRequest loginRequest = new CourierLoginRequest(
-                    createdCourier.getLogin(),
-                    createdCourier.getPassword()
-            );
-            Response login = loginCourier(loginRequest);
-            Integer id = login.body().path("id");
-
-            if (id != null) {
-                deleteCourier(id);
-            }
-        }
-    }
 
     @Test
     @DisplayName("Курьера можно создать. Запрос возвращает правильный код ответа. Успешный запрос возвращает ok: true")
